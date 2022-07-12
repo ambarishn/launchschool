@@ -1,0 +1,87 @@
+1. a function that returns the sum of two numbers
+
+Casual Pseudocode
+
+1. Given two numbers as parameters for the function.
+2. perform addition operation on the two numbers.
+3. store the result in a variable
+4. return the result variable.
+
+
+Formal Pseudocode
+
+START
+
+# Given two numbers as parameters for a function.
+
+SET result variable = number1 + number 2
+
+RETURN result
+
+END
+
+
+2. a function that takes an array of strings, and returns a string that is all those strings concatenated together
+
+Casual Pseudocode:
+
+1. Define the function to accept the array of strings.
+2. set an iterator value to 0
+3. declare a variable to store an empty string. Let's call it result.
+4. define a WHILE loop to iterate through the array. The stopping condition is less than the length of the array.
+5. result should be the sum of result and the current index value of the array.
+
+Formal Pseudocode:
+
+START
+
+# Given an array of strings
+
+SET result = ''
+SET iterator = 0
+
+WHILE iterator < length of array
+
+SET result = result + value within array at space "iterator"
+
+iterator = iterator + 1;
+
+RETURN result
+
+END
+
+
+3. a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element. For instance:
+everyOther([1,4,7,2,5]); // => [1,7,5]
+
+
+Casual
+
+Given an array of integers.
+
+create an array which contains no values. This is where we push the even elements of the original array.
+
+Iterate through the original array.
+ - If the index value is even, push the array value to the previously declared empty array.
+ - Repeat the process for all elements through iteration.
+ 
+return the resulting array.
+
+
+Formal:
+
+START
+
+# Given an array of integers
+
+Inside of a function,
+
+SET newArray = [] 
+FOR iterator = 0 and iterator < length of array
+-IF iterator % 2 is 0
+- newArray.push(array[iterator])
+
+RETURN newArray
+
+END
+
