@@ -85,3 +85,66 @@ RETURN newArray
 
 END
 
+4. a function that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the function should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return null.
+
+Given a string of characters.
+
+parse the string to see if the given character is present or not.
+
+if the character is not present, exit out of the loop.
+
+if the character is present, see whether the character is repeated thrice. 
+
+find the index value of the third occurence of the character using a string method
+
+Formal:
+
+START
+
+Given a string with multiple letters 
+
+SET count variable = 0
+SET iterator to 0
+
+WHILE iterator < string length
+Increment count variable by 1 for every repetition
+IF count variable = 3, 
+PRINT the index of the third occurence of the character using last index method for string
+ELSE
+SKIP to the next iteration
+
+PRINT the count
+
+END
+
+
+5. a function that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance:
+
+Casual
+
+Given two arrays of numbers
+
+create a new empty array to host the values
+
+iterate through both the arrays simultaneously. 
+
+push the elements from each array one by one into the new array
+
+print new array
+
+
+Formal:
+
+START
+
+Given two arrays with some values
+
+SET new empty array
+
+FOR iterator < array1 length 
+    push the array1[iterator] to empty array
+    push the array2[iterator] to empty array
+
+PRINT new array
+
+END
