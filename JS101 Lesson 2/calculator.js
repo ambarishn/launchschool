@@ -5,6 +5,12 @@
 // Print or return the final result to the User.
 const readline = require('readline-sync');
 
+const MESSAGES = require('./calculator_messages.json');
+
+const LANGUAGE = 'es';
+
+//console.log(MESSAGES);
+
 function prompt(message) {
   console.log(`=> ${message}`);
 }
@@ -13,8 +19,12 @@ function invalidNumber(number) {
   return number.trimStart() === '' || Number.isNaN(Number(number));
 }
 
+function messages(message, lang = 'en') {
+  return MESSAGES[lang][message];
+}
+
 //Welcome User
-prompt('Welcome to Calculator!');
+prompt(messages('welcome', LANGUAGE));
 
 while (true) {
 
